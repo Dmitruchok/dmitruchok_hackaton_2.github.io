@@ -1,3 +1,68 @@
 & {
+	.wrapper {
+		font-family: 'Montserrat Alternates';
+		width: px(640);
+		height: px(1138);
 
+			header {
+				display: flex;
+    		justify-content: space-between;
+				padding: 27px 13px;
+				height: px(110);
+				background-color: #e55b2d;
+				.left_icon {
+					.menue {
+						display: block;
+						background: url('../images/hct2Component/icon-menu.png') no-repeat;
+						background-size: px(36);
+						width: 20px;
+						height: 20px;
+					}
+				}
+				.logo {
+					display: block;
+					background: url('../images/hct2Component/n.png') no-repeat;
+					background-size: px(40);
+					width: 20px;
+					height: 20px;
+				}
+				.right_icon {
+					.setings {
+						display: block;
+						background: url('../images/hct2Component/icon-settings.png') no-repeat;
+						background-size: px(40);
+						width: 20px;
+						height: 20px;
+					}
+				}
+			}
+
+			aside {
+				background: url('../images/hct2Component/bg_phone.png') no-repeat;
+				background-size: cover;
+				text-align: center;
+				.bar_content {
+					padding-top: px(62);
+					h2 {
+						color: #fff;
+						font-size: px(36);
+					}
+					button {
+						color: #f96332;
+						font-size: px(19);
+						padding: px(18) px(38);
+						margin-top: px(45);
+						border-radius: px(30) px(30);
+						border: none;
+					}
+				}
+				span {
+					display: block;
+					color: #fff;
+					font-size: px(18);
+					margin-top: px(45);
+					padding-bottom: px(75);
+				}
+			}
+		}
 }
