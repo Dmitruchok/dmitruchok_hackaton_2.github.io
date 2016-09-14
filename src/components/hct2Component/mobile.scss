@@ -64,5 +64,119 @@
 					padding-bottom: px(75);
 				}
 			}
+			footer {
+				width: px(565);
+				margin: px(40) auto;
+				.astro_box {
+					h3 {
+						font-size: px(31);
+						line-height: px(38);
+					}
+					p {
+						display: flex;
+						align-items: center;
+						float: left;
+						font-size: px(18);
+						margin: px(30) px(20) 0 0;
+						&::before {
+							content: '';
+							display: inline-block;
+							background: url('../images/hct2Component/icon.png') no-repeat;
+							background-size: px(21);
+							width: 20px;
+							height: 15px;
+						}
+					}
+					span {
+						display: flex;
+						align-items: center;
+						font-size: px(18);
+						margin-top: px(30);
+						&::before {
+							content: '';
+							display: inline-block;
+							background: url('../images/hct2Component/icon_time.png') no-repeat;
+							background-size: px(28);
+							width: 20px;
+							height: 15px;
+						}
+					}
+				}
+				.archeolog_box {
+					h3 {
+						font-size: px(31);
+						line-height: px(42);
+						margin-top: px(75);
+					}
+					p {
+						display: flex;
+						align-items: center;
+						float: left;
+						font-size: px(18);
+						margin: px(30) px(26) 0 0;
+						&::before {
+							content: '';
+							display: inline-block;
+							background: url('../images/hct2Component/icon.png') no-repeat;
+							background-size: px(21);
+							width: 20px;
+							height: 15px;
+						}
+					}
+					span {
+						display: flex;
+						align-items: center;
+						font-size: px(18);
+						margin-top: px(30);
+						&::before {
+							content: '';
+							display: inline-block;
+							background: url('../images/hct2Component/icon_time.png') no-repeat;
+							background-size: px(28);
+							width: 20px;
+							height: 15px;
+						}
+					}
+				}
+				.ballob_box {
+					h3 {
+						font-size: px(31);
+						line-height: px(42);
+						margin-top: px(75);
+					}
+					p {
+						display: flex;
+						align-items: center;
+						float: left;
+						font-size: px(18);
+						margin: px(30) px(26) 0 0;
+						&::before {
+							content: '';
+							display: inline-block;
+							background: url('../images/hct2Component/icon.png') no-repeat;
+							background-size: px(21);
+							width: 20px;
+							height: 15px;
+						}
+					}
+					span {
+						display: flex;
+						align-items: center;
+						font-size: px(18);
+						margin-top: px(30);
+						&::before {
+							content: '';
+							display: inline-block;
+							background: url('../images/hct2Component/icon_time.png') no-repeat;
+							background-size: px(28);
+							width: 20px;
+							height: 15px;
+						}
+					}
+				}
+				.magma_box {
+					display: none;
+				}
+			}
 		}
 }
