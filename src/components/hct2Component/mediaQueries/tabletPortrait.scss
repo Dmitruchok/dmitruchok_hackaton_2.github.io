@@ -1,1 +1,48 @@
 @import '../mobile';
+.wrapper {
+          width: px(1536);
+          height: px(1718);
+          header {
+            			padding: px(40) px(14);
+            .left_icon {
+              .menue {
+                background-size: px(40);
+                width: px(60);
+                height: px(60);
+              }
+    				}
+    				.logo {
+              background-size: px(45);
+              margin-left: px(240);
+              width: px(80);
+              height: px(80);
+    				}
+    				.right_icon {
+              display: flex;
+              width: px(300);
+    					.setings {
+    						display: block;
+    						background: url('../images/hct2Component/icon-settings.png') no-repeat;
+    						background-size: px(50);
+                margin-right: px(30);
+    						width: px(80);
+    						height: px(80);
+    					}
+              .search {
+                display: block;
+                background: url('../images/hct2Component/icon-search.png') no-repeat;
+                background-size: px(45);
+                margin-right: px(30);
+                width: px(80);
+                height: px(80);
+              }
+              .final_icon {
+                display: block;
+                background: url('../images/hct2Component/avatar.png') no-repeat;
+                background-size: px(50);
+                width: px(80);
+                height: px(80);
+              }
+    				}
+          }
+        }
