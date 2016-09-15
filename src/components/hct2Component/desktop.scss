@@ -1,7 +1,6 @@
 & {
   .wrapper {
     font-family: 'Montserrat Alternates';
-
       header {
         display: flex;
         justify-content: space-between;
@@ -194,7 +193,7 @@
         a {
           background: url('../images/hct2Component/astro.png') no-repeat;
           background-size: cover;
-          width: px(760);
+          width: px(550);
           height: px(400);
         }
       }
@@ -247,8 +246,8 @@
         a {
           background: url('../images/hct2Component/archaeolog.png') no-repeat;
           background-size: cover;
-          width: px(760);
-          height: px(400);
+          width: px(550);
+          height: px(410);
         }
         }
         .ballob_box {
@@ -256,7 +255,7 @@
           flex-wrap: wrap;
           width: 25%;
           .info {
-            margin-top: px(82);
+            margin-top: px(84);
             width: 100%;
             text-align: center;
             h3 {
@@ -270,7 +269,7 @@
             display: flex;
             align-items: center;
             float: left;
-            margin: 0 0 px(45) px(45);
+            margin: 0 0 px(42) px(45);
             font-size: px(16);
             &::before {
               content: '';
@@ -284,7 +283,7 @@
           span {
             display: flex;
             align-items: center;
-            margin: 0 px(30) px(45) 0;
+            margin: 0 px(30) px(42) 0;
             font-size: px(16);
             float: right;
             &::before {
@@ -300,7 +299,7 @@
         a {
           background: url('../images/hct2Component/ballon.png') no-repeat;
           background-size: cover;
-          width: px(760);
+          width: px(550);
           height: px(400);
         }
         }
@@ -309,7 +308,7 @@
           flex-wrap: wrap;
           width: 25%;
           .info {
-            margin-top: px(82);
+            margin-top: px(30);
             width: 100%;
             text-align: center;
             h3 {
@@ -323,7 +322,7 @@
             display: flex;
             align-items: center;
             float: left;
-            margin: 0 0 px(45) px(45);
+            margin: px(45) 0 0 px(45);
             font-size: px(16);
             &::before {
               content: '';
@@ -337,7 +336,7 @@
           span {
             display: flex;
             align-items: center;
-            margin: 0 px(30) px(45) 0;
+            margin: px(45) px(30) 0 0;
             font-size: px(16);
             float: right;
             &::before {
@@ -350,12 +349,12 @@
             }
           }
         }
+        }
         a {
           background: url('../images/hct2Component/magma.png') no-repeat;
           background-size: cover;
-          width: px(760);
-          height: px(400);
-        }
+          width: px(550);
+          height: px(410);
         }
       }
     }
