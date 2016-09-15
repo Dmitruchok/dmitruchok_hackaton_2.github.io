@@ -145,7 +145,35 @@
               }
             }
             .archeolog_box {
-
+              display: flex;
+              flex-wrap: wrap;
+              width: 50%;
+              .info {
+                margin-top: px(110);
+                width: 100%;
+                text-align: center;
+                h3 {
+                  margin: 0 px(100) px(155) px(140);
+                  width: px(480);
+                  font-size: px(40);
+                  line-height: px(60);
+                }
+                p {
+                  margin: 0 0 px(50) px(82);
+                  font-size: px(22);
+                }
+                span {
+                  margin: 0 px(68) px(50) 0;
+                  font-size: px(22);
+                  float: right;
+                }
+              }
+              a {
+                background: url('../images/hct2Component/archaeolog.png') no-repeat;
+                background-size: contain;
+                width: 383px;
+                height: 270px;
+              }
             }
             .ballob_box {
               display: none;
