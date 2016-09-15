@@ -77,16 +77,16 @@
         background-size: cover;
         text-align: center;
         .bar_content {
-          padding-top: px(62);
+          padding-top: px(185);
           h2 {
             color: #fff;
-            font-size: px(36);
+            font-size: px(68);
           }
           button {
             color: #f96332;
             font-size: px(19);
-            padding: px(18) px(38);
-            margin-top: px(45);
+            padding: px(16) px(28);
+            margin-top: px(60);
             border-radius: px(30) px(30);
             border: none;
             outline: none;
@@ -96,29 +96,81 @@
           display: block;
           color: #fff;
           font-size: px(18);
-          margin-top: px(45);
-          padding-bottom: px(75);
+          margin-top: px(140);
+          padding-bottom: px(34);
+        }
+        .bar_icon {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 auto;
+          padding-bottom: px(58);
+          width: px(320);
+          .one_face {
+            display: block;
+            background: url('../images/hct2Component/avatar1.png') no-repeat;
+            background-size: px(45);
+            width: px(45);
+            height: px(45);
+          }
+          .two_face {
+            display: block;
+            background: url('../images/hct2Component/avatar2.png') no-repeat;
+            background-size: px(45);
+            width: px(45);
+            height: px(45);
+          }
+          .three_face {
+            display: block;
+            background: url('../images/hct2Component/avatar3.png') no-repeat;
+            background-size: px(45);
+            width: px(45);
+            height: px(45);
+          }
+          .four_face {
+            display: block;
+            background: url('../images/hct2Component/avatar4.png') no-repeat;
+            background-size: px(45);
+            width: px(45);
+            height: px(45);
+          }
+          .five_face {
+            display: block;
+            background: url('../images/hct2Component/avatar5.png') no-repeat;
+            background-size: px(45);
+            width: px(45);
+            height: px(45);
+          }
         }
       }
       footer {
-        width: px(565);
-        margin: px(40) auto;
+        display: flex;
+        flex-direction: row;
         .astro_box {
-          h3 {
-            font-size: px(31);
-            line-height: px(38);
-          }
+          display: flex;
+          flex-wrap: wrap;
+          width: 25%;
+          .info {
+            margin-top: px(82);
+            width: 100%;
+            text-align: center;
+            h3 {
+              margin: 0 px(100) px(90) px(65);
+              width: px(380);
+              font-size: px(36);
+              text-align: center;
+              line-height: px(56);
+            }
           p {
             display: flex;
             align-items: center;
             float: left;
-            font-size: px(18);
-            margin: px(30) px(20) 0 0;
+            margin: 0 0 px(45) px(45);
+            font-size: px(16);
             &::before {
               content: '';
               display: inline-block;
               background: url('../images/hct2Component/icon.png') no-repeat;
-              background-size: px(21);
+              background-size: px(16);
               width: px(40);
               height: px(30);
             }
@@ -126,35 +178,52 @@
           span {
             display: flex;
             align-items: center;
-            font-size: px(18);
-            margin-top: px(30);
+            margin: 0 px(30) px(45) 0;
+            font-size: px(16);
+            float: right;
             &::before {
               content: '';
               display: inline-block;
               background: url('../images/hct2Component/icon_time.png') no-repeat;
-              background-size: px(28);
+              background-size: px(26);
               width: px(40);
               height: px(30);
             }
           }
         }
+        a {
+          background: url('../images/hct2Component/astro.png') no-repeat;
+          background-size: cover;
+          width: px(760);
+          height: px(400);
+        }
+      }
         .archeolog_box {
-          h3 {
-            font-size: px(31);
-            line-height: px(42);
-            margin-top: px(75);
-          }
+          display: flex;
+          flex-wrap: wrap;
+          width: 25%;
+          .info {
+            margin-top: px(82);
+            width: 100%;
+            text-align: center;
+            h3 {
+              margin: 0 px(100) px(90) px(65);
+              width: px(380);
+              font-size: px(36);
+              text-align: center;
+              line-height: px(56);
+            }
           p {
             display: flex;
             align-items: center;
             float: left;
-            font-size: px(18);
-            margin: px(30) px(26) 0 0;
+            margin: 0 0 px(45) px(45);
+            font-size: px(16);
             &::before {
               content: '';
               display: inline-block;
               background: url('../images/hct2Component/icon.png') no-repeat;
-              background-size: px(21);
+              background-size: px(16);
               width: px(40);
               height: px(30);
             }
@@ -162,35 +231,52 @@
           span {
             display: flex;
             align-items: center;
-            font-size: px(18);
-            margin-top: px(30);
+            margin: 0 px(30) px(45) 0;
+            font-size: px(16);
+            float: right;
             &::before {
               content: '';
               display: inline-block;
               background: url('../images/hct2Component/icon_time.png') no-repeat;
-              background-size: px(28);
+              background-size: px(26);
               width: px(40);
               height: px(30);
             }
           }
+        }
+        a {
+          background: url('../images/hct2Component/archaeolog.png') no-repeat;
+          background-size: cover;
+          width: px(760);
+          height: px(400);
+        }
         }
         .ballob_box {
-          h3 {
-            font-size: px(31);
-            line-height: px(42);
-            margin-top: px(75);
-          }
+          display: flex;
+          flex-wrap: wrap;
+          width: 25%;
+          .info {
+            margin-top: px(82);
+            width: 100%;
+            text-align: center;
+            h3 {
+              margin: 0 px(100) px(90) px(65);
+              width: px(380);
+              font-size: px(36);
+              text-align: center;
+              line-height: px(56);
+            }
           p {
             display: flex;
             align-items: center;
             float: left;
-            font-size: px(18);
-            margin: px(30) px(26) 0 0;
+            margin: 0 0 px(45) px(45);
+            font-size: px(16);
             &::before {
               content: '';
               display: inline-block;
               background: url('../images/hct2Component/icon.png') no-repeat;
-              background-size: px(21);
+              background-size: px(16);
               width: px(40);
               height: px(30);
             }
@@ -198,20 +284,78 @@
           span {
             display: flex;
             align-items: center;
-            font-size: px(18);
-            margin-top: px(30);
+            margin: 0 px(30) px(45) 0;
+            font-size: px(16);
+            float: right;
             &::before {
               content: '';
               display: inline-block;
               background: url('../images/hct2Component/icon_time.png') no-repeat;
-              background-size: px(28);
+              background-size: px(26);
               width: px(40);
               height: px(30);
             }
           }
         }
+        a {
+          background: url('../images/hct2Component/ballon.png') no-repeat;
+          background-size: cover;
+          width: px(760);
+          height: px(400);
+        }
+        }
         .magma_box {
-          display: none;
+          display: flex;
+          flex-wrap: wrap;
+          width: 25%;
+          .info {
+            margin-top: px(82);
+            width: 100%;
+            text-align: center;
+            h3 {
+              margin: 0 px(100) px(90) px(65);
+              width: px(380);
+              font-size: px(36);
+              text-align: center;
+              line-height: px(56);
+            }
+          p {
+            display: flex;
+            align-items: center;
+            float: left;
+            margin: 0 0 px(45) px(45);
+            font-size: px(16);
+            &::before {
+              content: '';
+              display: inline-block;
+              background: url('../images/hct2Component/icon.png') no-repeat;
+              background-size: px(16);
+              width: px(40);
+              height: px(30);
+            }
+          }
+          span {
+            display: flex;
+            align-items: center;
+            margin: 0 px(30) px(45) 0;
+            font-size: px(16);
+            float: right;
+            &::before {
+              content: '';
+              display: inline-block;
+              background: url('../images/hct2Component/icon_time.png') no-repeat;
+              background-size: px(26);
+              width: px(40);
+              height: px(30);
+            }
+          }
+        }
+        a {
+          background: url('../images/hct2Component/magma.png') no-repeat;
+          background-size: cover;
+          width: px(760);
+          height: px(400);
+        }
         }
       }
     }
