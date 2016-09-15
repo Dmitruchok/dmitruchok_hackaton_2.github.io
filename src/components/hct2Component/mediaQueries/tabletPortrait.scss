@@ -54,21 +54,22 @@
                 font-size: px(82);
               }
               button {
-                font-size: px(22);
-                padding: px(24) px(38) px(24) px(45);
+                font-size: px(20);
+                border-radius: px(40) px(40);
+                padding: px(22) px(50);
                 margin-top: px(42);
               }
             }
             span {
               font-size: px(26);
-              margin-top: px(212);
-              padding-bottom: px(50);
+              margin-top: px(216);
+              padding-bottom: px(52);
             }
             .bar_icon {
               display: flex;
               justify-content: space-between;
               margin: 0 auto;
-              padding-bottom: px(55);
+              padding-bottom: px(58);
               width: px(320);
               .one_face {
                 display: block;
