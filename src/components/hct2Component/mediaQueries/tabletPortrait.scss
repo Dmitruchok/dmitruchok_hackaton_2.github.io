@@ -15,33 +15,33 @@
               background-size: px(45);
               margin-left: px(240);
               width: px(80);
-              height: px(80);
+              height: px(50);
     				}
     				.right_icon {
               display: flex;
-              width: px(270);
+              width: px(280);
     					.setings {
     						display: block;
     						background: url('../images/hct2Component/icon-settings.png') no-repeat;
     						background-size: px(50);
-                margin-right: px(30);
-    						width: px(80);
-    						height: px(80);
+                margin-right: px(50);
+    						width: px(60);
+    						height: px(50);
     					}
               .search {
                 display: block;
                 background: url('../images/hct2Component/icon-search.png') no-repeat;
                 background-size: px(45);
-                margin-right: px(30);
-                width: px(80);
-                height: px(80);
+                margin-right: px(54);
+                width: px(60);
+                height: px(50);
               }
               .final_icon {
                 display: block;
                 background: url('../images/hct2Component/avatar.png') no-repeat;
                 background-size: px(50);
-                width: px(80);
-                height: px(80);
+                width: px(60);
+                height: px(50);
               }
     				}
           }
@@ -51,16 +51,17 @@
             .bar_content {
               padding-top: px(270);
               h2 {
-                font-size: px(84);
+                font-size: px(82);
               }
               button {
-                padding: px(24) px(50);
+                font-size: px(22);
+                padding: px(24) px(38) px(24) px(45);
                 margin-top: px(42);
               }
             }
             span {
               font-size: px(26);
-              margin-top: px(220);
+              margin-top: px(212);
               padding-bottom: px(50);
             }
             .bar_icon {
