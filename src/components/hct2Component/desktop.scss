@@ -1,3 +1,209 @@
 & {
+  .wrapper {
+    font-family: 'Montserrat Alternates';
 
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: px(30) px(18) 0 px(50);
+        height: px(90);
+        background-color: #e55b2d;
+        .left_icon {
+          .menue {
+            display: block;
+            margin-top: px(5);
+            background: url('../images/hct2Component/icon-menu.png') no-repeat;
+            background-size: px(30);
+            width: px(60);
+            height: px(60);
+          }
+        }
+        .logo {
+          display: block;
+          background: url('../images/hct2Component/n.png') no-repeat;
+          background-size: px(32);
+          margin-left: px(260);
+          width: px(80);
+          height: px(50);
+        }
+        .right_icon {
+          display: flex;
+          width: px(300);
+          .setings {
+            display: block;
+            background: url('../images/hct2Component/icon-settings.png') no-repeat;
+            background-size: px(40);
+            margin-right: px(34);
+            width: px(50);
+            height: px(50);
+          }
+          .search {
+            display: block;
+            background: url('../images/hct2Component/icon-search.png') no-repeat;
+            background-size: px(32);
+            margin-right: px(30);
+            width: px(50);
+            height: px(50);
+          }
+          .face {
+            display: block;
+            background: url('../images/hct2Component/avatar.png') no-repeat;
+            background-size: px(45);
+            margin-right: px(40);
+            width: px(50);
+            height: px(50);
+          }
+          .final_icon {
+            display: block;
+            background: url('../images/hct2Component/icon-bookmark.png') no-repeat;
+            background-size: px(34);
+            width: px(50);
+            height: px(50);
+          }
+        }
+      }
+
+      aside {
+        background: url('../images/hct2Component/bg_phone.png') no-repeat;
+        background-size: cover;
+        text-align: center;
+        .bar_content {
+          padding-top: px(62);
+          h2 {
+            color: #fff;
+            font-size: px(36);
+          }
+          button {
+            color: #f96332;
+            font-size: px(19);
+            padding: px(18) px(38);
+            margin-top: px(45);
+            border-radius: px(30) px(30);
+            border: none;
+            outline: none;
+          }
+        }
+        span {
+          display: block;
+          color: #fff;
+          font-size: px(18);
+          margin-top: px(45);
+          padding-bottom: px(75);
+        }
+      }
+      footer {
+        width: px(565);
+        margin: px(40) auto;
+        .astro_box {
+          h3 {
+            font-size: px(31);
+            line-height: px(38);
+          }
+          p {
+            display: flex;
+            align-items: center;
+            float: left;
+            font-size: px(18);
+            margin: px(30) px(20) 0 0;
+            &::before {
+              content: '';
+              display: inline-block;
+              background: url('../images/hct2Component/icon.png') no-repeat;
+              background-size: px(21);
+              width: px(40);
+              height: px(30);
+            }
+          }
+          span {
+            display: flex;
+            align-items: center;
+            font-size: px(18);
+            margin-top: px(30);
+            &::before {
+              content: '';
+              display: inline-block;
+              background: url('../images/hct2Component/icon_time.png') no-repeat;
+              background-size: px(28);
+              width: px(40);
+              height: px(30);
+            }
+          }
+        }
+        .archeolog_box {
+          h3 {
+            font-size: px(31);
+            line-height: px(42);
+            margin-top: px(75);
+          }
+          p {
+            display: flex;
+            align-items: center;
+            float: left;
+            font-size: px(18);
+            margin: px(30) px(26) 0 0;
+            &::before {
+              content: '';
+              display: inline-block;
+              background: url('../images/hct2Component/icon.png') no-repeat;
+              background-size: px(21);
+              width: px(40);
+              height: px(30);
+            }
+          }
+          span {
+            display: flex;
+            align-items: center;
+            font-size: px(18);
+            margin-top: px(30);
+            &::before {
+              content: '';
+              display: inline-block;
+              background: url('../images/hct2Component/icon_time.png') no-repeat;
+              background-size: px(28);
+              width: px(40);
+              height: px(30);
+            }
+          }
+        }
+        .ballob_box {
+          h3 {
+            font-size: px(31);
+            line-height: px(42);
+            margin-top: px(75);
+          }
+          p {
+            display: flex;
+            align-items: center;
+            float: left;
+            font-size: px(18);
+            margin: px(30) px(26) 0 0;
+            &::before {
+              content: '';
+              display: inline-block;
+              background: url('../images/hct2Component/icon.png') no-repeat;
+              background-size: px(21);
+              width: px(40);
+              height: px(30);
+            }
+          }
+          span {
+            display: flex;
+            align-items: center;
+            font-size: px(18);
+            margin-top: px(30);
+            &::before {
+              content: '';
+              display: inline-block;
+              background: url('../images/hct2Component/icon_time.png') no-repeat;
+              background-size: px(28);
+              width: px(40);
+              height: px(30);
+            }
+          }
+        }
+        .magma_box {
+          display: none;
+        }
+      }
+    }
 }
