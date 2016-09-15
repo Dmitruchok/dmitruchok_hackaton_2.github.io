@@ -3,7 +3,7 @@
           width: px(1536);
           height: px(1718);
           header {
-            			padding: px(40) px(14);
+            			padding: px(40) px(25);
             .left_icon {
               .menue {
                 background-size: px(40);
@@ -19,7 +19,7 @@
     				}
     				.right_icon {
               display: flex;
-              width: px(300);
+              width: px(270);
     					.setings {
     						display: block;
     						background: url('../images/hct2Component/icon-settings.png') no-repeat;
@@ -44,5 +44,66 @@
                 height: px(80);
               }
     				}
+          }
+          aside {
+            background: url('../images/hct2Component/bg_tablet.png') no-repeat;
+            background-size: cover;
+            .bar_content {
+              padding-top: px(270);
+              h2 {
+                font-size: px(84);
+              }
+              button {
+                padding: px(24) px(50);
+                margin-top: px(42);
+              }
+            }
+            span {
+              font-size: px(26);
+              margin-top: px(220);
+              padding-bottom: px(50);
+            }
+            .bar_icon {
+              display: flex;
+              justify-content: space-between;
+              margin: 0 auto;
+              padding-bottom: px(55);
+              width: px(320);
+              .one_face {
+                display: block;
+                background: url('../images/hct2Component/avatar1.png') no-repeat;
+                background-size: px(45);
+                width: px(45);
+                height: px(45);
+              }
+              .two_face {
+                display: block;
+                background: url('../images/hct2Component/avatar2.png') no-repeat;
+                background-size: px(45);
+                width: px(45);
+                height: px(45);
+              }
+              .three_face {
+                display: block;
+                background: url('../images/hct2Component/avatar3.png') no-repeat;
+                background-size: px(45);
+                width: px(45);
+                height: px(45);
+              }
+              .four_face {
+                display: block;
+                background: url('../images/hct2Component/avatar4.png') no-repeat;
+                background-size: px(45);
+                width: px(45);
+                height: px(45);
+              }
+              .five_face {
+                display: block;
+                background: url('../images/hct2Component/avatar5.png') no-repeat;
+                background-size: px(45);
+                width: px(45);
+                height: px(45);
+              }
+            }
           }
         }
