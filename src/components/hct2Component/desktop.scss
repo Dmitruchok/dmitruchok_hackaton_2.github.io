@@ -9,6 +9,7 @@
         height: px(90);
         background-color: #e55b2d;
         .left_icon {
+          display: flex;
           .menue {
             display: block;
             margin-top: px(5);
@@ -17,12 +18,20 @@
             width: px(60);
             height: px(60);
           }
+          .chanels {
+            display: block;
+            color: #fff;
+            font-size: px(16);
+            margin: px(8) 0 0 px(40);
+            text-decoration: none;
+          }
         }
+
         .logo {
           display: block;
           background: url('../images/hct2Component/n.png') no-repeat;
           background-size: px(32);
-          margin-left: px(260);
+          margin-left: px(140);
           width: px(80);
           height: px(50);
         }
@@ -48,7 +57,7 @@
           .face {
             display: block;
             background: url('../images/hct2Component/avatar.png') no-repeat;
-            background-size: px(45);
+            background-size: px(44);
             margin-right: px(40);
             width: px(50);
             height: px(50);
