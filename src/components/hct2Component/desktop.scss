@@ -11,6 +11,12 @@
     flex-wrap: $flex-wrap;
     width: $width;
   }
+
+  @mixin title-size ($font-size, $width, $text-align) {
+    font-size: $font-size;
+    width: $width;
+    text-align: $text-align;
+  }
   .wrapper {
     font-family: 'Montserrat Alternates';
       header {
@@ -133,17 +139,13 @@
         .astro_box {
           @include block-size(flex, wrap, 25%);
           .info {
-            display: flex;
-            flex-wrap: wrap;
+            @include block-size(flex, wrap, 100%);
             margin-top: px(82);
-            width: 100%;
             text-align: center;
             h3 {
               margin: 0 px(100) px(90) px(65);
-              width: px(380);
-              font-size: px(36);
-              text-align: center;
               line-height: px(56);
+              @include title-size (px(36), px(380), center)
             }
           p {
             display: flex;
@@ -178,17 +180,13 @@
         .archeolog_box {
           @include block-size(flex, wrap, 25%);
           .info {
-            display: flex;
-            flex-wrap: wrap;
+            @include block-size(flex, wrap, 100%);
             margin-top: px(82);
-            width: 100%;
             text-align: center;
             h3 {
               margin: 0 px(100) px(90) px(65);
-              width: px(380);
-              font-size: px(36);
-              text-align: center;
               line-height: px(56);
+              @include title-size (px(36), px(380), center)
             }
           p {
             display: flex;
@@ -223,17 +221,13 @@
         .ballob_box {
           @include block-size(flex, wrap, 25%);
           .info {
-            display: flex;
-            flex-wrap: wrap;
+            @include block-size(flex, wrap, 100%);
             margin-top: px(84);
-            width: 100%;
             text-align: center;
             h3 {
               margin: 0 px(100) px(90) px(65);
-              width: px(380);
-              font-size: px(36);
-              text-align: center;
               line-height: px(56);
+              @include title-size (px(36), px(380), center)
             }
           p {
             display: flex;
@@ -266,17 +260,13 @@
         .magma_box {
           @include block-size(flex, wrap, 25%);
           .info {
-            display: flex;
-            flex-wrap: wrap;
+            @include block-size(flex, wrap, 100%);
             margin-top: px(30);
-            width: 100%;
             text-align: center;
             h3 {
               margin: 0 px(100) px(90) px(65);
-              width: px(380);
-              font-size: px(36);
-              text-align: center;
               line-height: px(56);
+              @include title-size (px(36), px(380), center)
             }
           p {
             display: flex;
