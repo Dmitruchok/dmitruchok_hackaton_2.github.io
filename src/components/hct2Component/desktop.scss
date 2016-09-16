@@ -1,4 +1,10 @@
 & {
+  @mixin size ($display, $width, $height, $background-size) {
+    display: $display;
+    width: $width;
+    height: $height;
+    background-size: $background-size;
+  }
   .wrapper {
     font-family: 'Montserrat Alternates';
       header {
@@ -37,36 +43,25 @@
         .right_icon {
           display: flex;
           width: px(300);
+
           .setings {
-            display: block;
             background: url('../images/hct2Component/icon-settings.png') no-repeat;
-            background-size: px(40);
             margin-right: px(34);
-            width: px(50);
-            height: px(50);
+            @include size (block, px(50), px(50), px(40));
           }
           .search {
-            display: block;
             background: url('../images/hct2Component/icon-search.png') no-repeat;
-            background-size: px(32);
             margin-right: px(30);
-            width: px(50);
-            height: px(50);
+            @include size (block, px(50), px(50), px(32));
           }
           .face {
-            display: block;
             background: url('../images/hct2Component/avatar.png') no-repeat;
-            background-size: px(44);
             margin-right: px(40);
-            width: px(50);
-            height: px(50);
+            @include size (block, px(50), px(50), px(44));
           }
           .final_icon {
-            display: block;
             background: url('../images/hct2Component/icon-bookmark.png') no-repeat;
-            background-size: px(34);
-            width: px(50);
-            height: px(50);
+            @include size (block, px(50), px(50), px(34));
           }
         }
       }
@@ -105,39 +100,24 @@
           padding-bottom: px(58);
           width: px(320);
           .one_face {
-            display: block;
             background: url('../images/hct2Component/avatar1.png') no-repeat;
-            background-size: px(45);
-            width: px(45);
-            height: px(45);
+            @include size (block, px(45), px(45), px(45));
           }
           .two_face {
-            display: block;
             background: url('../images/hct2Component/avatar2.png') no-repeat;
-            background-size: px(45);
-            width: px(45);
-            height: px(45);
+            @include size (block, px(45), px(45), px(45));
           }
           .three_face {
-            display: block;
             background: url('../images/hct2Component/avatar3.png') no-repeat;
-            background-size: px(45);
-            width: px(45);
-            height: px(45);
+            @include size (block, px(45), px(45), px(45));
           }
           .four_face {
-            display: block;
             background: url('../images/hct2Component/avatar4.png') no-repeat;
-            background-size: px(45);
-            width: px(45);
-            height: px(45);
+            @include size (block, px(45), px(45), px(45));
           }
           .five_face {
-            display: block;
             background: url('../images/hct2Component/avatar5.png') no-repeat;
-            background-size: px(45);
-            width: px(45);
-            height: px(45);
+            @include size (block, px(45), px(45), px(45));
           }
         }
       }
@@ -169,11 +149,8 @@
             font-size: px(16);
             &::before {
               content: '';
-              display: inline-block;
               background: url('../images/hct2Component/icon.png') no-repeat;
-              background-size: px(16);
-              width: px(40);
-              height: px(30);
+              @include size (inline-block, px(40), px(30), px(16));
             }
           }
           span {
@@ -184,19 +161,14 @@
             font-size: px(16);
             &::before {
               content: '';
-              display: inline-block;
               background: url('../images/hct2Component/icon_time.png') no-repeat;
-              background-size: px(26);
-              width: px(40);
-              height: px(30);
+              @include size (inline-block, px(40), px(30), px(26));
             }
           }
         }
         a {
           background: url('../images/hct2Component/astro.png') no-repeat;
-          background-size: cover;
-          width: px(550);
-          height: px(400);
+          @include size (block, px(550), px(400), cover);
         }
       }
         .archeolog_box {
@@ -224,11 +196,8 @@
             font-size: px(16);
             &::before {
               content: '';
-              display: inline-block;
               background: url('../images/hct2Component/icon.png') no-repeat;
-              background-size: px(16);
-              width: px(40);
-              height: px(30);
+              @include size (inline-block, px(40), px(30), px(16));
             }
           }
           span {
@@ -239,19 +208,14 @@
             font-size: px(16);
             &::before {
               content: '';
-              display: inline-block;
               background: url('../images/hct2Component/icon_time.png') no-repeat;
-              background-size: px(26);
-              width: px(40);
-              height: px(30);
+              @include size (inline-block, px(40), px(30), px(26));
             }
           }
         }
         a {
           background: url('../images/hct2Component/archaeolog.png') no-repeat;
-          background-size: cover;
-          width: px(550);
-          height: px(410);
+          @include size (block, px(550), px(410), cover);
         }
         }
         .ballob_box {
@@ -278,11 +242,8 @@
             font-size: px(16);
             &::before {
               content: '';
-              display: inline-block;
               background: url('../images/hct2Component/icon.png') no-repeat;
-              background-size: px(16);
-              width: px(40);
-              height: px(30);
+              @include size (inline-block, px(40), px(30), px(16));
             }
           }
           span {
@@ -292,19 +253,14 @@
             font-size: px(16);
             &::before {
               content: '';
-              display: inline-block;
               background: url('../images/hct2Component/icon_time.png') no-repeat;
-              background-size: px(26);
-              width: px(40);
-              height: px(30);
+              @include size (inline-block, px(40), px(30), px(26));
             }
           }
         }
         a {
           background: url('../images/hct2Component/ballon.png') no-repeat;
-          background-size: cover;
-          width: px(550);
-          height: px(400);
+          @include size (block, px(550), px(400), cover);
         }
         }
         .magma_box {
@@ -331,11 +287,8 @@
             font-size: px(16);
             &::before {
               content: '';
-              display: inline-block;
               background: url('../images/hct2Component/icon.png') no-repeat;
-              background-size: px(16);
-              width: px(40);
-              height: px(30);
+              @include size (inline-block, px(40), px(30), px(16));
             }
           }
           span {
@@ -345,20 +298,15 @@
             font-size: px(16);
             &::before {
               content: '';
-              display: inline-block;
               background: url('../images/hct2Component/icon_time.png') no-repeat;
-              background-size: px(26);
-              width: px(40);
-              height: px(30);
+              @include size (inline-block, px(40), px(30), px(26));
             }
           }
         }
         }
         a {
           background: url('../images/hct2Component/magma.png') no-repeat;
-          background-size: cover;
-          width: px(550);
-          height: px(410);
+          @include size (block, px(550), px(410), cover);
         }
       }
     }
