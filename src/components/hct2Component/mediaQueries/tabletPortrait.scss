@@ -1,4 +1,24 @@
 @import '../mobile';
+
+@mixin link-size ($display, $width, $height, $background-size) {
+  display: $display;
+  width: $width;
+  height: $height;
+  background-size: $background-size;
+}
+
+@mixin block-size ($display, $flex-wrap, $width) {
+  display: $display;
+  flex-wrap: $flex-wrap;
+  width: $width;
+}
+
+@mixin title-size ($font-size, $width, $margin, $line-height) {
+  font-size: $font-size;
+  width: $width;
+  margin: $margin;
+  line-height: $line-height;
+}
 .wrapper {
           width: px(1536);
           height: px(1718);
@@ -11,6 +31,9 @@
                 width: px(60);
                 height: px(60);
               }
+              .chanels {
+                display: none;
+              }
     				}
     				.logo {
               background-size: px(45);
@@ -22,27 +45,18 @@
               display: flex;
               width: px(280);
     					.setings {
-    						display: block;
     						background: url('../images/hct2Component/icon-settings.png') no-repeat;
-    						background-size: px(50);
                 margin-right: px(55);
-    						width: px(60);
-    						height: px(50);
+                @include link-size (block, px(60), px(50), px(50));
     					}
               .search {
-                display: block;
                 background: url('../images/hct2Component/icon-search.png') no-repeat;
-                background-size: px(45);
                 margin-right: px(54);
-                width: px(60);
-                height: px(50);
+                @include link-size (block, px(60), px(50), px(45));
               }
               .face {
-                display: block;
                 background: url('../images/hct2Component/avatar.png') no-repeat;
-                background-size: px(50);
-                width: px(60);
-                height: px(50);
+                @include link-size (block, px(60), px(50), px(50));
               }
     				}
           }
@@ -73,39 +87,24 @@
               padding-bottom: px(58);
               width: px(320);
               .one_face {
-                display: block;
                 background: url('../images/hct2Component/avatar1.png') no-repeat;
-                background-size: px(45);
-                width: px(45);
-                height: px(45);
+                @include link-size (block, px(45), px(45), px(45));
               }
               .two_face {
-                display: block;
                 background: url('../images/hct2Component/avatar2.png') no-repeat;
-                background-size: px(45);
-                width: px(45);
-                height: px(45);
+                @include link-size (block, px(45), px(45), px(45));
               }
               .three_face {
-                display: block;
                 background: url('../images/hct2Component/avatar3.png') no-repeat;
-                background-size: px(45);
-                width: px(45);
-                height: px(45);
+                @include link-size (block, px(45), px(45), px(45));
               }
               .four_face {
-                display: block;
                 background: url('../images/hct2Component/avatar4.png') no-repeat;
-                background-size: px(45);
-                width: px(45);
-                height: px(45);
+                @include link-size (block, px(45), px(45), px(45));
               }
               .five_face {
-                display: block;
                 background: url('../images/hct2Component/avatar5.png') no-repeat;
-                background-size: px(45);
-                width: px(45);
-                height: px(45);
+                @include link-size (block, px(45), px(45), px(45));
               }
             }
           }
@@ -115,18 +114,13 @@
             width: 100%;
             margin: 0;
             .astro_box {
-              display: flex;
-              flex-wrap: wrap;
-              width: 50%;
+              @include block-size (flex, wrap, 50%);
               .info {
                 margin-top: px(120);
                 width: 100%;
                 text-align: center;
                 h3 {
-                  margin: 0 px(100) px(215) px(100);
-                  width: px(560);
-                  font-size: px(40);
-                  line-height: px(60);
+                  @include title-size (px(40), px(560), 0 px(100) px(215) px(100), px(60));
                 }
                 p {
                   margin: 0 0 px(50) px(82);
@@ -146,18 +140,13 @@
               }
             }
             .archeolog_box {
-              display: flex;
-              flex-wrap: wrap;
-              width: 50%;
+              @include block-size (flex, wrap, 50%);
               .info {
                 margin-top: px(110);
                 width: 100%;
                 text-align: center;
                 h3 {
-                  margin: 0 px(100) px(155) px(140);
-                  width: px(480);
-                  font-size: px(40);
-                  line-height: px(60);
+                  @include title-size (px(40), px(480), 0 px(100) px(155) px(140), px(60));
                 }
                 p {
                   margin: 0 0 px(50) px(82);

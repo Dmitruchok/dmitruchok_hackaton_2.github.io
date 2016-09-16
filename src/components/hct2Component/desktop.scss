@@ -17,6 +17,14 @@
     width: $width;
     text-align: $text-align;
   }
+
+  @mixin page-span ($display, $margin, $width, $font-size) {
+    display: $display;
+    margin: $margin;
+    width: $width;
+    font-size: $font-size;
+  }
+
   .wrapper {
     font-family: 'Montserrat Alternates';
       header {
@@ -28,12 +36,9 @@
         .left_icon {
           display: flex;
           .menue {
-            display: block;
             margin-top: px(5);
             background: url('../images/hct2Component/icon-menu.png') no-repeat;
-            background-size: px(30);
-            width: px(60);
-            height: px(60);
+            @include link-size (block, px(60), px(60), px(30));
           }
           .chanels {
             display: block;
@@ -45,12 +50,9 @@
         }
 
         .logo {
-          display: block;
           background: url('../images/hct2Component/n.png') no-repeat;
-          background-size: px(32);
           margin-left: px(140);
-          width: px(80);
-          height: px(50);
+          @include link-size (block, px(80), px(50), px(32));
         }
         .right_icon {
           display: flex;
@@ -148,11 +150,8 @@
               @include title-size (px(36), px(380), center)
             }
           p {
-            display: flex;
-            width: 50%;
-            margin:0;
             padding-left: px(60);
-            font-size: px(16);
+            @include page-span (flex, 0, 50%, px(16));
             &::before {
               content: '';
               background: url('../images/hct2Component/icon.png') no-repeat;
@@ -160,11 +159,8 @@
             }
           }
           span {
-            display: flex;
-            width: 50%;
-            margin: 0;
             padding-left: px(66);
-            font-size: px(16);
+            @include page-span (flex, 0, 50%, px(16));
             &::before {
               content: '';
               background: url('../images/hct2Component/icon_time.png') no-repeat;
@@ -189,11 +185,8 @@
               @include title-size (px(36), px(380), center)
             }
           p {
-            display: flex;
-            width: 50%;
-            margin: 0;
             padding-left: px(60);
-            font-size: px(16);
+            @include page-span (flex, 0, 50%, px(16));
             &::before {
               content: '';
               background: url('../images/hct2Component/icon.png') no-repeat;
@@ -201,11 +194,8 @@
             }
           }
           span {
-            display: flex;
-            width: 50%;
-            margin: 0;
             padding-left: px(66);
-            font-size: px(16);
+            @include page-span (flex, 0, 50%, px(16));
             &::before {
               content: '';
               background: url('../images/hct2Component/icon_time.png') no-repeat;
@@ -230,10 +220,8 @@
               @include title-size (px(36), px(380), center)
             }
           p {
-            display: flex;
-            width: 50%;
-            margin: 0;
-            font-size: px(16);
+            padding-left: px(60);
+            @include page-span (flex, 0, 50%, px(16));
             &::before {
               content: '';
               background: url('../images/hct2Component/icon.png') no-repeat;
@@ -241,10 +229,8 @@
             }
           }
           span {
-            display: flex;
-            width: 50%;
-            margin: 0;
-            font-size: px(16);
+            padding-left: px(66);
+            @include page-span (flex, 0, 50%, px(16));
             &::before {
               content: '';
               background: url('../images/hct2Component/icon_time.png') no-repeat;
@@ -269,10 +255,8 @@
               @include title-size (px(36), px(380), center)
             }
           p {
-            display: flex;
-            width: 50%;
-            margin: 0;
-            font-size: px(16);
+            padding-left: px(60);
+            @include page-span (flex, 0, 50%, px(16));
             &::before {
               content: '';
               background: url('../images/hct2Component/icon.png') no-repeat;
@@ -280,10 +264,8 @@
             }
           }
           span {
-            display: flex;
-            width: 50%;
-            margin: 0;
-            font-size: px(16);
+            padding-left: px(66);
+            @include page-span (flex, 0, 50%, px(16));
             &::before {
               content: '';
               background: url('../images/hct2Component/icon_time.png') no-repeat;
