@@ -149,6 +149,8 @@
           flex-wrap: wrap;
           width: 25%;
           .info {
+            display: flex;
+            flex-wrap: wrap;
             margin-top: px(82);
             width: 100%;
             text-align: center;
@@ -161,9 +163,9 @@
             }
           p {
             display: flex;
-            align-items: center;
-            float: left;
-            margin: 0 0 px(45) px(45);
+            width: 50%;
+            margin:0;
+            padding-left: px(60);
             font-size: px(16);
             &::before {
               content: '';
@@ -176,10 +178,10 @@
           }
           span {
             display: flex;
-            align-items: center;
-            margin: 0 px(30) px(45) 0;
+            width: 50%;
+            margin: 0;
+            padding-left: px(66);
             font-size: px(16);
-            float: right;
             &::before {
               content: '';
               display: inline-block;
@@ -202,6 +204,8 @@
           flex-wrap: wrap;
           width: 25%;
           .info {
+            display: flex;
+            flex-wrap: wrap;
             margin-top: px(82);
             width: 100%;
             text-align: center;
@@ -214,9 +218,9 @@
             }
           p {
             display: flex;
-            align-items: center;
-            float: left;
-            margin: 0 0 px(45) px(45);
+            width: 50%;
+            margin: 0;
+            padding-left: px(60);
             font-size: px(16);
             &::before {
               content: '';
@@ -229,10 +233,10 @@
           }
           span {
             display: flex;
-            align-items: center;
-            margin: 0 px(30) px(45) 0;
+            width: 50%;
+            margin: 0;
+            padding-left: px(66);
             font-size: px(16);
-            float: right;
             &::before {
               content: '';
               display: inline-block;
@@ -255,6 +259,8 @@
           flex-wrap: wrap;
           width: 25%;
           .info {
+            display: flex;
+            flex-wrap: wrap;
             margin-top: px(84);
             width: 100%;
             text-align: center;
@@ -267,9 +273,8 @@
             }
           p {
             display: flex;
-            align-items: center;
-            float: left;
-            margin: 0 0 px(42) px(45);
+            width: 50%;
+            margin: 0;
             font-size: px(16);
             &::before {
               content: '';
@@ -282,10 +287,9 @@
           }
           span {
             display: flex;
-            align-items: center;
-            margin: 0 px(30) px(42) 0;
+            width: 50%;
+            margin: 0;
             font-size: px(16);
-            float: right;
             &::before {
               content: '';
               display: inline-block;
@@ -308,6 +312,8 @@
           flex-wrap: wrap;
           width: 25%;
           .info {
+            display: flex;
+            flex-wrap: wrap;
             margin-top: px(30);
             width: 100%;
             text-align: center;
@@ -320,9 +326,8 @@
             }
           p {
             display: flex;
-            align-items: center;
-            float: left;
-            margin: px(45) 0 0 px(45);
+            width: 50%;
+            margin: 0;
             font-size: px(16);
             &::before {
               content: '';
@@ -335,10 +340,9 @@
           }
           span {
             display: flex;
-            align-items: center;
-            margin: px(45) px(30) 0 0;
+            width: 50%;
+            margin: 0;
             font-size: px(16);
-            float: right;
             &::before {
               content: '';
               display: inline-block;
