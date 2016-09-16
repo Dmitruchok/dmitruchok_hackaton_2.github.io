@@ -1,9 +1,15 @@
 & {
-  @mixin size ($display, $width, $height, $background-size) {
+  @mixin link-size ($display, $width, $height, $background-size) {
     display: $display;
     width: $width;
     height: $height;
     background-size: $background-size;
+  }
+
+  @mixin block-size ($display, $flex-wrap, $width) {
+    display: $display;
+    flex-wrap: $flex-wrap;
+    width: $width;
   }
   .wrapper {
     font-family: 'Montserrat Alternates';
@@ -47,21 +53,21 @@
           .setings {
             background: url('../images/hct2Component/icon-settings.png') no-repeat;
             margin-right: px(34);
-            @include size (block, px(50), px(50), px(40));
+            @include link-size (block, px(50), px(50), px(40));
           }
           .search {
             background: url('../images/hct2Component/icon-search.png') no-repeat;
             margin-right: px(30);
-            @include size (block, px(50), px(50), px(32));
+            @include link-size (block, px(50), px(50), px(32));
           }
           .face {
             background: url('../images/hct2Component/avatar.png') no-repeat;
             margin-right: px(40);
-            @include size (block, px(50), px(50), px(44));
+            @include link-size (block, px(50), px(50), px(44));
           }
           .final_icon {
             background: url('../images/hct2Component/icon-bookmark.png') no-repeat;
-            @include size (block, px(50), px(50), px(34));
+            @include link-size (block, px(50), px(50), px(34));
           }
         }
       }
@@ -101,23 +107,23 @@
           width: px(320);
           .one_face {
             background: url('../images/hct2Component/avatar1.png') no-repeat;
-            @include size (block, px(45), px(45), px(45));
+            @include link-size (block, px(45), px(45), px(45));
           }
           .two_face {
             background: url('../images/hct2Component/avatar2.png') no-repeat;
-            @include size (block, px(45), px(45), px(45));
+            @include link-size (block, px(45), px(45), px(45));
           }
           .three_face {
             background: url('../images/hct2Component/avatar3.png') no-repeat;
-            @include size (block, px(45), px(45), px(45));
+            @include link-size (block, px(45), px(45), px(45));
           }
           .four_face {
             background: url('../images/hct2Component/avatar4.png') no-repeat;
-            @include size (block, px(45), px(45), px(45));
+            @include link-size (block, px(45), px(45), px(45));
           }
           .five_face {
             background: url('../images/hct2Component/avatar5.png') no-repeat;
-            @include size (block, px(45), px(45), px(45));
+            @include link-size (block, px(45), px(45), px(45));
           }
         }
       }
@@ -125,9 +131,7 @@
         display: flex;
         flex-direction: row;
         .astro_box {
-          display: flex;
-          flex-wrap: wrap;
-          width: 25%;
+          @include block-size(flex, wrap, 100%);
           .info {
             display: flex;
             flex-wrap: wrap;
@@ -150,7 +154,7 @@
             &::before {
               content: '';
               background: url('../images/hct2Component/icon.png') no-repeat;
-              @include size (inline-block, px(40), px(30), px(16));
+              @include link-size (inline-block, px(40), px(30), px(16));
             }
           }
           span {
@@ -162,19 +166,17 @@
             &::before {
               content: '';
               background: url('../images/hct2Component/icon_time.png') no-repeat;
-              @include size (inline-block, px(40), px(30), px(26));
+              @include link-size (inline-block, px(40), px(30), px(26));
             }
           }
         }
         a {
           background: url('../images/hct2Component/astro.png') no-repeat;
-          @include size (block, px(550), px(400), cover);
+          @include link-size (block, px(550), px(400), cover);
         }
       }
         .archeolog_box {
-          display: flex;
-          flex-wrap: wrap;
-          width: 25%;
+          @include block-size(flex, wrap, 100%);
           .info {
             display: flex;
             flex-wrap: wrap;
@@ -197,7 +199,7 @@
             &::before {
               content: '';
               background: url('../images/hct2Component/icon.png') no-repeat;
-              @include size (inline-block, px(40), px(30), px(16));
+              @include link-size (inline-block, px(40), px(30), px(16));
             }
           }
           span {
@@ -209,19 +211,17 @@
             &::before {
               content: '';
               background: url('../images/hct2Component/icon_time.png') no-repeat;
-              @include size (inline-block, px(40), px(30), px(26));
+              @include link-size (inline-block, px(40), px(30), px(26));
             }
           }
         }
         a {
           background: url('../images/hct2Component/archaeolog.png') no-repeat;
-          @include size (block, px(550), px(410), cover);
+          @include link-size (block, px(550), px(410), cover);
         }
         }
         .ballob_box {
-          display: flex;
-          flex-wrap: wrap;
-          width: 25%;
+          @include block-size(flex, wrap, 100%);
           .info {
             display: flex;
             flex-wrap: wrap;
@@ -243,7 +243,7 @@
             &::before {
               content: '';
               background: url('../images/hct2Component/icon.png') no-repeat;
-              @include size (inline-block, px(40), px(30), px(16));
+              @include link-size (inline-block, px(40), px(30), px(16));
             }
           }
           span {
@@ -254,19 +254,17 @@
             &::before {
               content: '';
               background: url('../images/hct2Component/icon_time.png') no-repeat;
-              @include size (inline-block, px(40), px(30), px(26));
+              @include link-size (inline-block, px(40), px(30), px(26));
             }
           }
         }
         a {
           background: url('../images/hct2Component/ballon.png') no-repeat;
-          @include size (block, px(550), px(400), cover);
+          @include link-size (block, px(550), px(400), cover);
         }
         }
         .magma_box {
-          display: flex;
-          flex-wrap: wrap;
-          width: 25%;
+          @include block-size(flex, wrap, 100%);
           .info {
             display: flex;
             flex-wrap: wrap;
@@ -288,7 +286,7 @@
             &::before {
               content: '';
               background: url('../images/hct2Component/icon.png') no-repeat;
-              @include size (inline-block, px(40), px(30), px(16));
+              @include link-size (inline-block, px(40), px(30), px(16));
             }
           }
           span {
@@ -299,14 +297,14 @@
             &::before {
               content: '';
               background: url('../images/hct2Component/icon_time.png') no-repeat;
-              @include size (inline-block, px(40), px(30), px(26));
+              @include link-size (inline-block, px(40), px(30), px(26));
             }
           }
         }
         }
         a {
           background: url('../images/hct2Component/magma.png') no-repeat;
-          @include size (block, px(550), px(410), cover);
+          @include link-size (block, px(550), px(410), cover);
         }
       }
     }
