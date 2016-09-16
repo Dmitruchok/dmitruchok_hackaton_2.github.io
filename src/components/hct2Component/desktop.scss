@@ -12,9 +12,8 @@
     width: $width;
   }
 
-  @mixin title-size ($font-size, $width, $text-align) {
+  @mixin title-size ($font-size, $text-align) {
     font-size: $font-size;
-    width: $width;
     text-align: $text-align;
   }
 
@@ -139,18 +138,21 @@
         display: flex;
         flex-direction: row;
         .astro_box {
-          @include block-size(flex, wrap, 25%);
+          @include block-size(flex, nowrap, 25%);
+          flex-direction: column;
           .info {
             @include block-size(flex, wrap, 100%);
-            margin-top: px(82);
+            margin-top: px(80);
+            margin-bottom: px(40);
             text-align: center;
             h3 {
-              margin: 0 px(100) px(90) px(65);
+              margin: 0 px(100) px(90) px(90);
               line-height: px(56);
-              @include title-size (px(36), px(380), center)
+              @include title-size (px(36), center)
             }
           p {
-            padding-left: px(60);
+            align-items: center;
+            padding-left: px(40);
             @include page-span (flex, 0, 50%, px(16));
             &::before {
               content: '';
@@ -159,7 +161,8 @@
             }
           }
           span {
-            padding-left: px(66);
+            align-items: center;
+            padding-left: px(90);
             @include page-span (flex, 0, 50%, px(16));
             &::before {
               content: '';
@@ -170,22 +173,24 @@
         }
         a {
           background: url('../images/hct2Component/astro.png') no-repeat;
-          @include link-size (block, px(550), px(400), cover);
+          @include link-size (block, px(510), px(410), px(570));
         }
       }
         .archeolog_box {
-          @include block-size(flex, wrap, 25%);
+          @include block-size(flex, nowrap, 25%);
+          flex-direction: column;
           .info {
             @include block-size(flex, wrap, 100%);
-            margin-top: px(82);
+            margin-top: px(80);
             text-align: center;
             h3 {
-              margin: 0 px(100) px(90) px(65);
+              margin: 0 px(80) px(90) px(75);
               line-height: px(56);
-              @include title-size (px(36), px(380), center)
+              @include title-size (px(36), center)
             }
           p {
-            padding-left: px(60);
+            align-items: center;
+            padding-left: px(40);
             @include page-span (flex, 0, 50%, px(16));
             &::before {
               content: '';
@@ -194,7 +199,8 @@
             }
           }
           span {
-            padding-left: px(66);
+            align-items: center;
+            padding-left: px(90);
             @include page-span (flex, 0, 50%, px(16));
             &::before {
               content: '';
@@ -205,22 +211,25 @@
         }
         a {
           background: url('../images/hct2Component/archaeolog.png') no-repeat;
-          @include link-size (block, px(550), px(410), cover);
+          @include link-size (block, px(510), px(410), px(580));
         }
         }
         .ballob_box {
-          @include block-size(flex, wrap, 25%);
+          @include block-size(flex, nowrap, 25%);
+          flex-direction: column;
           .info {
             @include block-size(flex, wrap, 100%);
-            margin-top: px(84);
+            margin-top: px(80);
+            margin-bottom: px(40);
             text-align: center;
             h3 {
-              margin: 0 px(100) px(90) px(65);
+              margin: 0 px(50) px(90) px(80);
               line-height: px(56);
-              @include title-size (px(36), px(380), center)
+              @include title-size (px(36), center)
             }
           p {
-            padding-left: px(60);
+            align-items: center;
+            padding-left: px(40);
             @include page-span (flex, 0, 50%, px(16));
             &::before {
               content: '';
@@ -229,7 +238,8 @@
             }
           }
           span {
-            padding-left: px(66);
+            align-items: center;
+            padding-left: px(100);
             @include page-span (flex, 0, 50%, px(16));
             &::before {
               content: '';
@@ -240,23 +250,25 @@
         }
         a {
           background: url('../images/hct2Component/ballon.png') no-repeat;
-          @include link-size (block, px(550), px(400), cover);
+          @include link-size (block, px(510), px(400), px(570));
         }
         }
         .magma_box {
-          @include block-size(flex, wrap, 25%);
+          @include block-size(flex, nowrap, 25%);
+          flex-direction: column;
           .info {
             @include block-size(flex, wrap, 100%);
-            margin-top: px(30);
+            margin-top: px(90);
             text-align: center;
             h3 {
-              margin: 0 px(100) px(90) px(65);
+              margin: 0 px(80) px(140) px(90);
               line-height: px(56);
-              @include title-size (px(36), px(380), center)
+              @include title-size (px(36), center)
             }
           p {
-            padding-left: px(60);
-            @include page-span (flex, 0, 50%, px(16));
+            align-items: center;
+            padding-left: px(40);
+            @include page-span (flex, 0, 55%, px(16));
             &::before {
               content: '';
               background: url('../images/hct2Component/icon.png') no-repeat;
@@ -264,8 +276,9 @@
             }
           }
           span {
-            padding-left: px(66);
-            @include page-span (flex, 0, 50%, px(16));
+            align-items: center;
+            padding-left: px(80);
+            @include page-span (flex, 0, 45%, px(16));
             &::before {
               content: '';
               background: url('../images/hct2Component/icon_time.png') no-repeat;
@@ -276,7 +289,7 @@
         }
         a {
           background: url('../images/hct2Component/magma.png') no-repeat;
-          @include link-size (block, px(550), px(410), cover);
+          @include link-size (block, px(510), px(400), px(570));
         }
       }
     }
