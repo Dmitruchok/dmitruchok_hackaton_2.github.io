@@ -173,7 +173,7 @@
         }
         a {
           background: url('../images/hct2Component/astro.png') no-repeat;
-          @include link-size (block, px(510), px(410), px(570));
+          @include link-size (block, px(510), px(380), px(570));
         }
       }
         .archeolog_box {
@@ -250,7 +250,7 @@
         }
         a {
           background: url('../images/hct2Component/ballon.png') no-repeat;
-          @include link-size (block, px(510), px(400), px(570));
+          @include link-size (block, px(510), px(380), px(570));
         }
         }
         .magma_box {
