@@ -111,9 +111,10 @@
           justify-content: space-between;
           margin: 0 auto;
           padding-bottom: px(58);
-          width: px(320);
+          width: px(380);
           .one_face {
             background: url('../images/hct2Component/avatar1.png') no-repeat;
+            margin-left: px(40);
             @include link-size (block, px(45), px(45), px(45));
           }
           .two_face {
@@ -130,6 +131,7 @@
           }
           .five_face {
             background: url('../images/hct2Component/avatar5.png') no-repeat;
+            margin-right: px(16);
             @include link-size (block, px(45), px(45), px(45));
           }
         }
